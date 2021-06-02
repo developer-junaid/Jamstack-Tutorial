@@ -21,3 +21,9 @@
 - - GraphQl > import Schema (choose file functions/utils/links.gql)
 - - Click Security > add key > select server > add name > save and copy
 - - Create .env file at root > store the key in FAUNA_SECRET_KEY variable
+
+## Packages Installation
+
+```bash
+  npm i axios dotenv
+```
