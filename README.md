@@ -2,6 +2,8 @@
 
 ## Stack = React + GraphQl + FaunaDB
 
+### URL: :link: https://save-links.netlify.app/
+
 <img src='./images/home.png'>
 
 ## Steps
@@ -21,6 +23,10 @@
 - - GraphQl > import Schema (choose file functions/utils/links.gql)
 - - Click Security > add key > select server > add name > save and copy
 - - Create .env file at root > store the key in FAUNA_SECRET_KEY variable
+- create functions
+- - Create, Read, Update, Delete
+- Create Frontend
+- - Integrate Serverless functions with Frontend by making api calls
 
 ## Packages Installation
 
