@@ -2,7 +2,7 @@ import React from "react";
 
 const LinkCard = ({ link, refreshLinks }) => {
   const archiveLink = async () => {
-    link.archived = true; // Archive the object
+    link.archived = !link.archived; // Archive the object
     try {
       // Update DB
       await fetch("/api/updateLink", {
@@ -38,7 +38,7 @@ const LinkCard = ({ link, refreshLinks }) => {
       </div>
       <div className="card-footer">
         <button onClick={archiveLink} className="btn btn-warning mr2">
-          Archive
+          {link.archived ? "Unarchive" : "Archive"}
         </button>
         &nbsp;
         <button onClick={deleteLink} className="btn btn-danger  ml2">
