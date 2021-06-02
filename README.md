@@ -25,5 +25,5 @@
 ## Packages Installation
 
 ```bash
-  npm i axios dotenv
+  npm i axios dotenv bootstrap
 ```
