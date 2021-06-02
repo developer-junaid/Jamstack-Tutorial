@@ -1,6 +1,34 @@
 import React from "react";
 
-const LinkCard = ({ link }) => {
+const LinkCard = ({ link, refreshLinks }) => {
+  const archiveLink = async () => {
+    link.archived = true; // Archive the object
+    try {
+      // Update DB
+      await fetch("/api/updateLink", {
+        method: "PUT",
+        body: JSON.stringify(link),
+      });
+      refreshLinks(); // Refresh
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const deleteLink = async () => {
+    const id = link._id;
+
+    try {
+      await fetch("api/deleteLink", {
+        method: "DELETE",
+        body: JSON.stringify({ id }), // Send id to delete
+      });
+      refreshLinks(); // Refresh
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <div className="card">
       <div className="card-header">{link.name}</div>
@@ -9,9 +37,13 @@ const LinkCard = ({ link }) => {
         <p>{link.description}</p>
       </div>
       <div className="card-footer">
-        <button className="btn btn-warning mr2">Archive</button>
+        <button onClick={archiveLink} className="btn btn-warning mr2">
+          Archive
+        </button>
         &nbsp;
-        <button className="btn btn-danger  ml2">Delete</button>
+        <button onClick={deleteLink} className="btn btn-danger  ml2">
+          Delete
+        </button>
       </div>
     </div>
   );

@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="container py-5">
       <h1 className="text-center mb-5">Save Links</h1>
-      <LinkList links={links} />
+      <LinkList links={links} refreshLinks={loadLinks} />
     </div>
   );
 }
