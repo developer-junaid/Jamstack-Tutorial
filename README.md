@@ -33,3 +33,15 @@
 ```bash
   npm i axios dotenv bootstrap
 ```
+
+
+## Tech Stack 
+- HTML5
+- CSS3
+- Javascript and ES+6
+- Bootstrap
+- ReactJs
+- NodeJs
+- Netlify Serverless Functions
+- GraphQl
+- FaunaDB (Database)
