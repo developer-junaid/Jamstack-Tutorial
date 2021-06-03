@@ -30,7 +30,7 @@ const LinkCard = ({ link, refreshLinks }) => {
   };
 
   return (
-    <div className="card">
+    <div className="card mt-3">
       <div className="card-header">{link.name}</div>
       <div className="card-body">
         <a href={link.url}>{link.url}</a>
