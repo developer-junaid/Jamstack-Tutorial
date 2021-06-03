@@ -3,6 +3,7 @@
 ## Stack = React + GraphQl + FaunaDB
 
 ### URL: :link: https://save-links.netlify.app/
+### Youtube Demo: https://youtu.be/B2IQjiEEYJU
 
 <img src='./images/home.png'>
 
