@@ -3,9 +3,10 @@
 ## Stack = React + GraphQl + FaunaDB
 
 ### URL: :link: https://save-links.netlify.app/
+
 ### Youtube Demo: https://youtu.be/B2IQjiEEYJU
 
-<img src='./images/home.png'>
+<img src='./src/images/home.png'>
 
 ## Steps
 
@@ -35,8 +36,8 @@
   npm i axios dotenv bootstrap
 ```
 
+## Tech Stack
 
-## Tech Stack 
 - HTML5
 - CSS3
 - Javascript and ES+6
